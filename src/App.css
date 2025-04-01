@@ -1,0 +1,111 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  padding: 20px;
+  height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.user {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.explanations {
+  margin-top: 5px;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #555;
+  list-style-type: disc; /* Add bullet points */
+}
+
+.chat-input{
+  display: flex;
+  padding: 10px
+}
+
+.chat-input input {
+flex-grow: 1;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.chat-input button {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Add this to src/App.css */
+.explanation-detail {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* Optional Typing Indicator */
+.typing-indicator span {
+  display: inline-block;
+  animation: typing-blink 1.4s infinite both;
+  font-size: 1.2em; /* Adjust size */
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
